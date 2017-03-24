@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="app.leiyu.com.english.TranslateActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textView2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="100dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/toolbar2"
+            android:background="#f4f1f1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:hint="Enter words"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp"
+            android:layout_alignParentEnd="true"
+            android:background="#f4f1f1" />
+
+        <Button
+            android:text="translation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:id="@+id/button6"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_light" />
+
+        <Button
+            android:text="translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="?android:attr/colorBackground"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:drawableTop="@mipmap/translate"/>
+
+        <Button
+            android:text="friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/colorBackground"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:drawableTop="@mipmap/friend"/>
+
+        <Button
+            android:text="setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button5"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="?android:attr/colorBackground"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:drawableTop="@mipmap/setting"
+            />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
